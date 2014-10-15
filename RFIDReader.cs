@@ -21,6 +21,7 @@ namespace PackageTracker {
 
             int Result = SetupReaderList();
             if (Result == 1) {
+                SetupReaderEvents();
                 Start();
             }
         }
@@ -45,6 +46,7 @@ namespace PackageTracker {
         }
 
         private void Reader_OnCardInserted(String e) {
+            MainForm.SyncThreads(Convert.ToInt32(GetCardNumber()), ReaderContext);
             GetCardNumber();
             Reader.Disconnect(DISCONNECT.Unpower);
         }
@@ -63,17 +65,18 @@ namespace PackageTracker {
             if (Reader != null) {
                 //Previous card may not have been removed, dissonecting card in preperation for next read
                 Reader.Disconnect(DISCONNECT.Unpower);
-            } else {
-                Reader = new CardNative();
-                Reader.OnCardInserted += new CardInsertedEventHandler(Reader_OnCardInserted);
-                Reader.OnCardRemoved += new CardRemovedEventHandler(Reader_OnCardRemoved);
-            }
+            } 
+            Reader = new CardNative();
+            Reader.OnCardInserted += new CardInsertedEventHandler(Reader_OnCardInserted);
+            Reader.OnCardRemoved += new CardRemovedEventHandler(Reader_OnCardRemoved);
+            
         }
 
         private int SetupReaderList() {
             int Result = 0;
 
             try {
+                Reader = new CardNative();
                 ReaderList = Reader.ListReaders();
 
                 if (ReaderList != null) {

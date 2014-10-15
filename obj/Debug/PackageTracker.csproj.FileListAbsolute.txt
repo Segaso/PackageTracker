@@ -9,3 +9,14 @@ D:\C# Projects\PackageTracker\PackageTracker\bin\Debug\GemCard.dll
 D:\C# Projects\PackageTracker\PackageTracker\bin\Debug\SmartCardPlayer.dll
 D:\C# Projects\PackageTracker\PackageTracker\obj\Debug\PackageTracker.exe
 D:\C# Projects\PackageTracker\PackageTracker\obj\Debug\PackageTracker.pdb
+D:\Code\GitHub\PackageTracker\bin\Debug\PackageTracker.exe.config
+D:\Code\GitHub\PackageTracker\obj\Debug\PackageTracker.exe
+D:\Code\GitHub\PackageTracker\obj\Debug\PackageTracker.pdb
+D:\Code\GitHub\PackageTracker\bin\Debug\PackageTracker.exe
+D:\Code\GitHub\PackageTracker\bin\Debug\PackageTracker.pdb
+D:\Code\GitHub\PackageTracker\bin\Debug\GemCard.dll
+D:\Code\GitHub\PackageTracker\bin\Debug\SmartCardPlayer.dll
+D:\Code\GitHub\PackageTracker\obj\Debug\PackageTracker.csprojResolveAssemblyReference.cache
+D:\Code\GitHub\PackageTracker\obj\Debug\PackageTracker.Main.resources
+D:\Code\GitHub\PackageTracker\obj\Debug\PackageTracker.Properties.Resources.resources
+D:\Code\GitHub\PackageTracker\obj\Debug\PackageTracker.csproj.GenerateResource.Cache

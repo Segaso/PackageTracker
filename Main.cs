@@ -18,11 +18,13 @@ namespace PackageTracker {
             var Reader = new RFIDReader(this, AsyncOperationManager.SynchronizationContext);
         }
 
-        private void SyncThreads(int CardNumber, SynchronizationContext UIContext) {
+        public void SyncThreads(int CardNumber, SynchronizationContext UIContext) {
             UIContext.Post(ProcessCardNumber, CardNumber.ToString());
         }
 
         private void ProcessCardNumber(object InCardNumber) {
+            String Test = InCardNumber.ToString();
+
 
         }
 
