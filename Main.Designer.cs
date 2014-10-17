@@ -29,63 +29,77 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.MainTabControl = new System.Windows.Forms.TabControl();
+            this.TabPackageRecieved = new System.Windows.Forms.TabPage();
+            this.TabPackagePickup = new System.Windows.Forms.TabPage();
+            this.MainTabControl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // statusStrip
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(846, 478);
-            this.tabControl1.TabIndex = 0;
+            this.statusStrip.Location = new System.Drawing.Point(0, 456);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(846, 22);
+            this.statusStrip.TabIndex = 0;
+            this.statusStrip.Text = "statusStrip";
             // 
-            // tabPage1
+            // MainTabControl
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(838, 452);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Package Pickup";
+            this.MainTabControl.Controls.Add(this.TabPackagePickup);
+            this.MainTabControl.Controls.Add(this.TabPackageRecieved);
+            this.MainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainTabControl.Location = new System.Drawing.Point(0, 0);
+            this.MainTabControl.Margin = new System.Windows.Forms.Padding(8);
+            this.MainTabControl.Name = "MainTabControl";
+            this.MainTabControl.SelectedIndex = 0;
+            this.MainTabControl.Size = new System.Drawing.Size(846, 456);
+            this.MainTabControl.TabIndex = 0;
             // 
-            // tabPage2
+            // TabPackageRecieved
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(838, 452);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Package Recieved";
+            this.TabPackageRecieved.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPackageRecieved.Location = new System.Drawing.Point(4, 22);
+            this.TabPackageRecieved.Name = "TabPackageRecieved";
+            this.TabPackageRecieved.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPackageRecieved.Size = new System.Drawing.Size(833, 430);
+            this.TabPackageRecieved.TabIndex = 1;
+            this.TabPackageRecieved.Text = "Package Recieved";
+            // 
+            // TabPackagePickup
+            // 
+            this.TabPackagePickup.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPackagePickup.Location = new System.Drawing.Point(4, 22);
+            this.TabPackagePickup.Name = "TabPackagePickup";
+            this.TabPackagePickup.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPackagePickup.Size = new System.Drawing.Size(838, 430);
+            this.TabPackagePickup.TabIndex = 0;
+            this.TabPackagePickup.Text = "Package Pickup";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 478);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.MainTabControl);
+            this.Controls.Add(this.statusStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Text = "Mailroom Package Service";
             this.Load += new System.EventHandler(this.Main_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.MainTabControl.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.TabControl MainTabControl;
+        private System.Windows.Forms.TabPage TabPackagePickup;
+        private System.Windows.Forms.TabPage TabPackageRecieved;
+
     }
 }
 

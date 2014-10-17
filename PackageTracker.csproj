@@ -38,6 +38,7 @@
     <Reference Include="GemCard">
       <HintPath>.\GemCard.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="SmartCardPlayer">
       <HintPath>.\SmartCardPlayer.dll</HintPath>
     </Reference>
@@ -54,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
