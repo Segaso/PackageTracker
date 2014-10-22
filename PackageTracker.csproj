@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="InputDevice.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Email.cs" />
     <Compile Include="Main.cs">

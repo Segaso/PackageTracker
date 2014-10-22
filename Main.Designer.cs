@@ -32,22 +32,22 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.MainTabControl = new System.Windows.Forms.TabControl();
             this.TabPackagePickup = new System.Windows.Forms.TabPage();
-            this.TabPackageRecieved = new System.Windows.Forms.TabPage();
-            this.AccountPhoto = new System.Windows.Forms.PictureBox();
-            this.gbAccountInformation = new System.Windows.Forms.GroupBox();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.lblID = new System.Windows.Forms.Label();
-            this.txtCardNumber = new System.Windows.Forms.TextBox();
-            this.lblCardNumber = new System.Windows.Forms.Label();
             this.gbPackageInformation = new System.Windows.Forms.GroupBox();
+            this.gbAccountInformation = new System.Windows.Forms.GroupBox();
+            this.lblCardNumber = new System.Windows.Forms.Label();
+            this.txtCardNumber = new System.Windows.Forms.TextBox();
+            this.lblID = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.AccountPhoto = new System.Windows.Forms.PictureBox();
+            this.TabPackageRecieved = new System.Windows.Forms.TabPage();
             this.MainTabControl.SuspendLayout();
             this.TabPackagePickup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AccountPhoto)).BeginInit();
             this.gbAccountInformation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip
@@ -82,24 +82,14 @@
             this.TabPackagePickup.TabIndex = 0;
             this.TabPackagePickup.Text = "Package Pickup";
             // 
-            // TabPackageRecieved
+            // gbPackageInformation
             // 
-            this.TabPackageRecieved.BackColor = System.Drawing.SystemColors.Control;
-            this.TabPackageRecieved.Location = new System.Drawing.Point(4, 22);
-            this.TabPackageRecieved.Name = "TabPackageRecieved";
-            this.TabPackageRecieved.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPackageRecieved.Size = new System.Drawing.Size(505, 408);
-            this.TabPackageRecieved.TabIndex = 1;
-            this.TabPackageRecieved.Text = "Package Recieved";
-            // 
-            // AccountPhoto
-            // 
-            this.AccountPhoto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.AccountPhoto.Location = new System.Drawing.Point(6, 19);
-            this.AccountPhoto.Name = "AccountPhoto";
-            this.AccountPhoto.Size = new System.Drawing.Size(131, 165);
-            this.AccountPhoto.TabIndex = 0;
-            this.AccountPhoto.TabStop = false;
+            this.gbPackageInformation.Location = new System.Drawing.Point(8, 204);
+            this.gbPackageInformation.Name = "gbPackageInformation";
+            this.gbPackageInformation.Size = new System.Drawing.Size(490, 193);
+            this.gbPackageInformation.TabIndex = 2;
+            this.gbPackageInformation.TabStop = false;
+            this.gbPackageInformation.Text = "Packages";
             // 
             // gbAccountInformation
             // 
@@ -119,44 +109,21 @@
             this.gbAccountInformation.TabStop = false;
             this.gbAccountInformation.Text = "Account Information";
             // 
-            // lblFirstName
+            // lblCardNumber
             // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(157, 19);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(55, 13);
-            this.lblFirstName.TabIndex = 1;
-            this.lblFirstName.Text = "Firstname:";
+            this.lblCardNumber.AutoSize = true;
+            this.lblCardNumber.Location = new System.Drawing.Point(145, 98);
+            this.lblCardNumber.Name = "lblCardNumber";
+            this.lblCardNumber.Size = new System.Drawing.Size(67, 13);
+            this.lblCardNumber.TabIndex = 8;
+            this.lblCardNumber.Text = "Cardnumber:";
             // 
-            // lblLastName
+            // txtCardNumber
             // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(156, 45);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(56, 13);
-            this.lblLastName.TabIndex = 2;
-            this.lblLastName.Text = "Lastname:";
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Location = new System.Drawing.Point(218, 16);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(264, 20);
-            this.txtLastName.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(218, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(218, 69);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(264, 20);
-            this.txtID.TabIndex = 5;
+            this.txtCardNumber.Location = new System.Drawing.Point(218, 95);
+            this.txtCardNumber.Name = "txtCardNumber";
+            this.txtCardNumber.Size = new System.Drawing.Size(264, 20);
+            this.txtCardNumber.TabIndex = 7;
             // 
             // lblID
             // 
@@ -167,30 +134,63 @@
             this.lblID.TabIndex = 6;
             this.lblID.Text = "ID:";
             // 
-            // txtCardNumber
+            // txtID
             // 
-            this.txtCardNumber.Location = new System.Drawing.Point(218, 95);
-            this.txtCardNumber.Name = "txtCardNumber";
-            this.txtCardNumber.Size = new System.Drawing.Size(264, 20);
-            this.txtCardNumber.TabIndex = 7;
+            this.txtID.Location = new System.Drawing.Point(218, 69);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(264, 20);
+            this.txtID.TabIndex = 5;
             // 
-            // lblCardNumber
+            // textBox1
             // 
-            this.lblCardNumber.AutoSize = true;
-            this.lblCardNumber.Location = new System.Drawing.Point(145, 98);
-            this.lblCardNumber.Name = "lblCardNumber";
-            this.lblCardNumber.Size = new System.Drawing.Size(67, 13);
-            this.lblCardNumber.TabIndex = 8;
-            this.lblCardNumber.Text = "Cardnumber:";
+            this.textBox1.Location = new System.Drawing.Point(218, 42);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(264, 20);
+            this.textBox1.TabIndex = 4;
             // 
-            // gbPackageInformation
+            // txtLastName
             // 
-            this.gbPackageInformation.Location = new System.Drawing.Point(8, 204);
-            this.gbPackageInformation.Name = "gbPackageInformation";
-            this.gbPackageInformation.Size = new System.Drawing.Size(490, 193);
-            this.gbPackageInformation.TabIndex = 2;
-            this.gbPackageInformation.TabStop = false;
-            this.gbPackageInformation.Text = "Packages";
+            this.txtLastName.Location = new System.Drawing.Point(218, 16);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(264, 20);
+            this.txtLastName.TabIndex = 3;
+            // 
+            // lblLastName
+            // 
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Location = new System.Drawing.Point(156, 45);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(56, 13);
+            this.lblLastName.TabIndex = 2;
+            this.lblLastName.Text = "Lastname:";
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Location = new System.Drawing.Point(157, 19);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(55, 13);
+            this.lblFirstName.TabIndex = 1;
+            this.lblFirstName.Text = "Firstname:";
+            // 
+            // AccountPhoto
+            // 
+            this.AccountPhoto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.AccountPhoto.Location = new System.Drawing.Point(6, 19);
+            this.AccountPhoto.Name = "AccountPhoto";
+            this.AccountPhoto.Size = new System.Drawing.Size(131, 165);
+            this.AccountPhoto.TabIndex = 0;
+            this.AccountPhoto.TabStop = false;
+            // 
+            // TabPackageRecieved
+            // 
+            this.TabPackageRecieved.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPackageRecieved.Location = new System.Drawing.Point(4, 22);
+            this.TabPackageRecieved.Name = "TabPackageRecieved";
+            this.TabPackageRecieved.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPackageRecieved.Size = new System.Drawing.Size(505, 408);
+            this.TabPackageRecieved.TabIndex = 1;
+            this.TabPackageRecieved.Text = "Package Recieved";
             // 
             // Main
             // 
@@ -202,12 +202,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Text = "Mailroom Package Service";
-            this.Load += new System.EventHandler(this.Main_Load);
             this.MainTabControl.ResumeLayout(false);
             this.TabPackagePickup.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.AccountPhoto)).EndInit();
             this.gbAccountInformation.ResumeLayout(false);
             this.gbAccountInformation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountPhoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
